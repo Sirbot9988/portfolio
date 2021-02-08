@@ -1,0 +1,73 @@
+{ 
+    "strengths": [
+        {
+            "title": "Python", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/strengths/django.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "python", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/strengths/react.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "python", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/strengths/python.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "python", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/strengths/nextjs.svg",
+            "type": "Proficient"
+        },
+        {
+            "title": "python", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/strengths/html5.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "python", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/strengths/aws.png",
+            "type": "Proficient"
+        }
+        
+    ],
+    "learning": [
+        {
+            "title": "Tensorflow", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/learning/tsflow.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "Tensorflow", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/learning/arduino.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "Tensorflow", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/learning/postgresql.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "Tensorflow", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/learning/premiere.png",
+            "type": "Proficient"
+        },
+        {
+            "title": "Tensorflow", 
+            "content": "I'm really good at python", 
+            "photoUrl": "media/learning/firebase.png",
+            "type": "Proficient"
+        }
+    ]
+}
