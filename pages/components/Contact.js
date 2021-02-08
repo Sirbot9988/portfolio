@@ -7,7 +7,7 @@ export default class Contact extends Component {
                 <div className="m-10">
                 <h1 className="text-9xl text-white">Contact Me</h1>
                 <div className="justify-self-center mt-8 flex flex-col">
-                    <form className="grid grid-cols-1 text-2xl gap-y-5" name="contact" method="POST" data-netlify="true">
+                    <form className="grid grid-cols-1 text-2xl gap-y-5" action="/success" name="contact" method="POST" data-netlify="true">
                     <div className="grid grid-cols-2 gap-x-20">
                         <div className="grid grid-cols-1 grid-rows-1">
                             <label htmlFor="name">First Name</label>
