@@ -9,6 +9,7 @@ import Popup from 'reactjs-popup';
 import StrengthPop from './components/PopupStrengths';
 import strengthConfig from './config/strengthDescConfig.json';
 import AOS from 'aos';
+import Contact from './components/Contact';
 import 'aos/dist/aos.css';
 export default function Home() {
     useEffect(() => {
@@ -97,9 +98,9 @@ export default function Home() {
                         {learningTab}
                         
                     </div>
-
-
-
+                </div>
+                <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32">
+                    <Contact/>
                 </div>
         </>
   )
