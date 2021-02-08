@@ -5,21 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^10.0.6",
     "aos": "^2.3.4",
     "autoprefixer": "^10.2.4",
-    "firebase": "^8.2.6",
+    "cross-env": "^7.0.3",
     "next": "10.0.6",
     "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-particles-js": "^3.4.1",
-    "react-smooth-scrollbar": "^8.0.6",
     "react-typed": "^1.2.0",
     "reactjs-popup": "^2.0.4",
-    "smooth-scrollbar": "^8.6.0",
     "tailwindcss": "^2.0.2"
   }
 }
