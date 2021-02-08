@@ -25,7 +25,7 @@ export default function Home() {
   const strengthTab = strengthConfig["strengths"].map((data) => {
       return (
         <div className="grid grid-cols-1">
-            <img className="w-64 h-64" src={data.photoUrl}></img>
+            <img className="w-64 h-64" src={data.photoUrl} alt={data.title}></img>
             <p className="text-center">{data.type} in {data.title}</p>
             <Popup trigger={<button>See Projects</button>} modal><StrengthPop title={data.title} content={data.content}/></Popup>
         </div>   
@@ -34,7 +34,7 @@ export default function Home() {
   const learningTab = strengthConfig["learning"].map((data) => {
     return (
       <div className="grid grid-cols-1">
-          <img className="w-64 h-64" src={data.photoUrl}></img>
+          <img className="w-64 h-64" src={data.photoUrl} alt={data.title}></img>
           <p className="text-center">{data.type} in {data.title}</p>
           <Popup trigger={<button>See Projects</button>} modal><StrengthPop title={data.title} content={data.content}/></Popup>
       </div>   
@@ -45,6 +45,8 @@ export default function Home() {
             <Head>
                 <title>Sirbot</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="A 16 Year Old Developer ready to serve your tech needs"/>
+                <meta name="theme-color" content="#F1C21B"></meta>
             </Head>
             <Navbar className="relative w-screen"/>
 
@@ -67,7 +69,7 @@ export default function Home() {
                 <div className="relative z-10 flex flex-col justify-center items-center bg-white h-192 w-screen">
                     <h1 className="flex w-33 h-15 text-5xl text-center mt-5">Strengths</h1>
                     <div className="absolute mx-32 right-0 object-right w-64 h-64 m-0 top-20">
-                        <img className="w-64 h-64 m-0" src='svg/Cloud.svg'/>
+                        <img className="w-64 h-64 m-0" src='svg/Cloud.svg' alt="floating me 2!"/>
                     </div>
                     {/* Portfolio projects */}
                     <div className="justify-self-center">These are my biggest strengths</div>
@@ -88,7 +90,7 @@ export default function Home() {
                             to test out new ideas and see what is the best solution to problems.</div>
                         </div>
                         <div className="w-64 h-64 m-0 top-20">
-                            <img className="w-128 h-128 m-0" src='svg/manLamp.svg'/>
+                            <img className="w-128 h-128 m-0" src='svg/manLamp.svg' alt="floating cloud me!"/>
                         </div>
                     </div>
  
