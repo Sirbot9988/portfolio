@@ -1,39 +1,39 @@
 { 
     "strengths": [
         {
+            "title": "Django", 
+            "content": "I was recently tasked with making a website for my school newspaper. This led to me learning and becoming very familiar with the ins and outs of Django. I found the framework very intuitive and finished the website. <br> The website is now live at https://talktown.org. Unfortunately, I am not allowed to share any login details for the website as it would violate a child protection policy that my school enforces. I will include some screen shots of the website when a user is logged in below:", 
+            "photoUrl": "media/strengths/django.svg",
+            "type": "Proficient"
+        },
+        {
+            "title": "React JS", 
+            "content": "When working on web projects, I found that some of my ideas were too simple for a large server side rendering framework like Django, so I learnt Javascript to work on React projects. An example of my React would be my StudentsMarket project, a yet-to-launch marketplace for students in my school to sell and buy books by listing their books online. <br>  <a href='https://github.com/Sirbot9988/StudentsMarketPublic' className='text-white text-center h-10 w-40 bg-black'><div>Link to Github</div></a>", 
+            "photoUrl": "media/strengths/react.svg",
+            "type": "Proficient"
+        },
+        {
             "title": "Python", 
-            "content": "I'm really good at python", 
-            "photoUrl": "media/strengths/django.png",
+            "content": "My first programming language that I ever learnt was Python around 5 years ago (When I was around 11). Since then, I have worked on countless projects, many of which were small learning experiences. Only recently have I been able to use my skills for real world projects.", 
+            "photoUrl": "media/strengths/python.svg",
             "type": "Proficient"
         },
         {
-            "title": "python", 
-            "content": "I'm really good at python", 
-            "photoUrl": "media/strengths/react.png",
-            "type": "Proficient"
-        },
-        {
-            "title": "python", 
-            "content": "I'm really good at python", 
-            "photoUrl": "media/strengths/python.png",
-            "type": "Proficient"
-        },
-        {
-            "title": "python", 
-            "content": "I'm really good at python", 
+            "title": "Next JS", 
+            "content": "After learning React, I seeked a solution for a Search Engine friendly framework for my portfolio. I quickly found Next Js and learnt it for this website. ", 
             "photoUrl": "media/strengths/nextjs.svg",
             "type": "Proficient"
         },
         {
-            "title": "python", 
-            "content": "I'm really good at python", 
-            "photoUrl": "media/strengths/html5.png",
+            "title": "HTML & CSS", 
+            "content": "HTML and CSS was my first exposure into the web-dev community. I now consider myself proficient in transferring designs into HTML and CSS. I have also been able to take advantage of TailwindCSS and Bootstrap in my projects.", 
+            "photoUrl": "media/strengths/html5.svg",
             "type": "Proficient"
         },
         {
-            "title": "python", 
-            "content": "I'm really good at python", 
-            "photoUrl": "media/strengths/aws.png",
+            "title": "AWS", 
+            "content": "When I was working on my backend for the school newspaper, I quickly found that I needed a robust hosting, DNS and database services. With a combination of Amazon Route 53, LightSail, RDS and many headaches, I made a fully functioning backend for my project and have learnt a lot of the nuances when working with Amazon Web Services.", 
+            "photoUrl": "media/strengths/aws.svg",
             "type": "Proficient"
         }
         
@@ -42,31 +42,31 @@
         {
             "title": "Tensorflow", 
             "content": "I'm really good at python", 
-            "photoUrl": "media/learning/tsflow.png",
+            "photoUrl": "media/learning/tsflow.svg",
             "type": "Proficient"
         },
         {
-            "title": "Tensorflow", 
+            "title": "Arduino", 
             "content": "I'm really good at python", 
-            "photoUrl": "media/learning/arduino.png",
+            "photoUrl": "media/learning/arduino.svg",
             "type": "Proficient"
         },
         {
-            "title": "Tensorflow", 
+            "title": "Postgresql", 
             "content": "I'm really good at python", 
-            "photoUrl": "media/learning/postgresql.png",
+            "photoUrl": "media/learning/postgresql.svg",
             "type": "Proficient"
         },
         {
-            "title": "Tensorflow", 
+            "title": "Adobe Premiere Pro", 
             "content": "I'm really good at python", 
-            "photoUrl": "media/learning/premiere.png",
+            "photoUrl": "media/learning/premiere.svg",
             "type": "Proficient"
         },
         {
-            "title": "Tensorflow", 
+            "title": "Firebase", 
             "content": "I'm really good at python", 
-            "photoUrl": "media/learning/firebase.png",
+            "photoUrl": "media/learning/firebase.svg",
             "type": "Proficient"
         }
     ]

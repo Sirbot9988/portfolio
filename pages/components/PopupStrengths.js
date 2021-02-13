@@ -11,7 +11,7 @@ export default class PopupStrengths extends Component {
         return (
             <>
                 <h1>{this.props.title}</h1>
-                <p>{this.props.content}</p>
+                <p dangerouslySetInnerHTML={{__html: this.props.content}}></p>
             </>
         )
     }

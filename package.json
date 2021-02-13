@@ -19,9 +19,11 @@
     "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-parallax": "^3.2.0",
     "react-particles-js": "^3.4.1",
     "react-typed": "^1.2.0",
     "reactjs-popup": "^2.0.4",
+    "rellax": "^1.12.1",
     "tailwindcss": "^2.0.2"
   }
 }

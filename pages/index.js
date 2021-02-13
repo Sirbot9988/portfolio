@@ -1,17 +1,34 @@
+// Default Deps
 import Head from 'next/head';
-import {useEffect} from 'react'
+import {useEffect, useRef} from 'react'
+// Tailwind Deps
 import "tailwindcss/tailwind.css";
 import Navbar from './components/Navbar';
+// Landing Slide Deps
 import Particles from 'react-particles-js';
 import Typed from 'react-typed';
 import particleParams from './config/particleConfig.json';
-import Popup from 'reactjs-popup';
-import StrengthPop from './components/PopupStrengths';
-import strengthConfig from './config/strengthDescConfig.json';
+
+// Effects
+import Rellax from "rellax";
 import AOS from 'aos';
-import Contact from './components/Contact';
 import 'aos/dist/aos.css';
+// Components
+import Contact from './components/Contact';
+import StrengthsTab from './components/StrengthsTab';
+import LearningTab from './components/LearningTab';
+import Github from './components/GithubLink'
 export default function Home() {
+    const rellaxRef = useRef();
+    useEffect(() => {
+        new Rellax(".rellax", {
+            speed: -1,
+            center: false,
+            wrapper: null,
+            round: true, 
+            vertical: true,
+            horizontal: false});
+        })
     useEffect(() => {
         AOS.init({
           duration : 2000
@@ -22,24 +39,7 @@ export default function Home() {
         height: 120 + "vh",
     }
   }
-  const strengthTab = strengthConfig["strengths"].map((data) => {
-      return (
-        <div className="grid grid-cols-1">
-            <img className="w-64 h-64" src={data.photoUrl} alt={data.title}></img>
-            <p className="text-center">{data.type} in {data.title}</p>
-            <Popup trigger={<button>See Projects</button>} modal><StrengthPop title={data.title} content={data.content}/></Popup>
-        </div>   
-      )
-  })
-  const learningTab = strengthConfig["learning"].map((data) => {
-    return (
-      <div className="grid grid-cols-1">
-          <img className="w-64 h-64" src={data.photoUrl} alt={data.title}></img>
-          <p className="text-center">{data.type} in {data.title}</p>
-          <Popup trigger={<button>See Projects</button>} modal><StrengthPop title={data.title} content={data.content}/></Popup>
-      </div>   
-    )
-})
+const learningDescription = "As a young, aspiring developer, I realise that my lack of experience is a major weakness but I try to make up for it by learning new technologies everyday. By doing this, I better understand the world around me and strengthen my tools with which I can solve problems."
   return (
         <>
             <Head>
@@ -56,7 +56,7 @@ export default function Home() {
                     </div>
                     <div>
                         <div className="relative z-10 flex justify-center items-center min-h-screen w-screen">
-                            <h1 className="text-5xl text-center ">
+                            <h1 className="text-5xl text-center">
                                 <Typed strings={["A <br/>16 Year-Old <br/> Developer"]} typeSpeed={100}/>
                             </h1>
                             <br/>
@@ -66,15 +66,15 @@ export default function Home() {
                 </div>
 
 
-                <div className="relative z-10 flex flex-col justify-center items-center bg-white h-192 w-screen">
-                    <h1 className="flex w-33 h-15 text-5xl text-center mt-5">Strengths</h1>
-                    <div className="absolute mx-32 right-0 object-right w-64 h-64 m-0 top-20">
-                        <img className="w-64 h-64 m-0" src='svg/Cloud.svg' alt="floating me 2!"/>
+                <div className="relative z-10 flex flex-col justify-center items-center bg-white h-192 w-screen" >
+                    <h1 className="flex w-33 h-15 text-5xl text-center mt-5" data-aos={"fade-up"}>Strengths</h1>
+                    <div className="absolute mx-32 right-0 object-right w-64 h-64 m-0 top-20" data-aos={"fade-up"}>
+                        <img className="w-64 h-64 m-0 rellax" src='svg/Cloud.svg' alt="floating me 2!"/>
                     </div>
                     {/* Portfolio projects */}
-                    <div className="justify-self-center">These are my biggest strengths</div>
+                    <div className="justify-self-center" data-aos={"fade-up"}>These are my biggest strengths</div>
                     <div className="grid justify-self-center grid-cols-3 mt-5 gap-y-2.5" data-aos={"fade-up"}>
-                        {strengthTab}
+                        <StrengthsTab/>
                         
                     </div>
 
@@ -82,12 +82,11 @@ export default function Home() {
 
 
                 </div>
-                <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32">
+                <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32" data-aos={"fade-up"}>
                     <div className="grid grid-cols-3 h-64">
-                        <div className="col-span-2" data-aos={"fade-up"}>
-                            <h1 className="flex w-33 h-15 text-5xl text-center">What I'm Currently Learning </h1>
-                            <div className="justify-self-center">I'm always looking to learn new things, 
-                            to test out new ideas and see what is the best solution to problems.</div>
+                        <div className="col-span-2 w-96" data-aos={"fade-up"}>
+                            <h1 className="flex w-33 h-15 text-5xl text-center right-0">What I'm Currently Learning </h1>
+                            <div className="justify-self-center">{learningDescription}</div>
                         </div>
                         <div className="w-64 h-64 m-0 top-20">
                             <img className="w-128 h-128 m-0" src='svg/manLamp.svg' alt="floating cloud me!"/>
@@ -97,12 +96,13 @@ export default function Home() {
                     {/* Portfolio projects */}
              
                     <div className="grid justify-self-center grid-cols-3 mt-5 gap-y-2.5 gap-x-10">
-                        {learningTab}
+                        <LearningTab/>
                         
                     </div>
                 </div>
-                <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32">
+                <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32" data-aos={"fade-up"}>
                     <Contact/>
+                    <Github/>
                 </div>
         </>
   )
