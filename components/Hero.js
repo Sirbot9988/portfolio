@@ -9,6 +9,9 @@ export default class Hero extends Component {
         const styles = {
             particle: {
                 height: 120 + "vh",
+            }, 
+            text: {
+                pointerEvents: 'none',
             }
           }
         return (
@@ -17,12 +20,12 @@ export default class Hero extends Component {
             <Particles style={styles.particle} params={particleParams}/>
             </div>
             <div>
-                <div className="relative z-10 flex justify-center items-center min-h-screen w-screen">
+                <div style={styles.text} className="relative z-10 flex justify-center items-center min-h-screen w-screen">
                     <h1 className="text-5xl text-center">
                         <Typed strings={["A <br/>16 Year-Old <br/> Developer"]} typeSpeed={100}/>
                     </h1>
                     <br/>
-                        <div className="absolute mt-64 headerButton bg-green-100 w-20 text-center rounded-md animate-bounce shadow-lg"><a href="#">My<br/>Projects</a></div>
+                        <div style={{pointerEvents: 'all'}} className="absolute mt-64 headerButton bg-green-100 w-20 text-center rounded-md animate-bounce shadow-lg"><a href="#">My<br/>Projects</a></div>
                 </div>
             </div>
             </div>
