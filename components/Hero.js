@@ -16,8 +16,8 @@ export default class Hero extends Component {
           }
         return (
             <div className="slide w-screen">
-            <div className="z-0 absolute h-screen w-screen">
-            <Particles style={styles.particle} params={particleParams}/>
+            <div className="z-0 hidden sm:block relative sm:absolute h-screen w-screen">
+            <Particles className="sm:max-height-100" params={particleParams}/>
             </div>
             <div>
                 <div style={styles.text} className="relative z-10 flex justify-center items-center min-h-screen w-screen">

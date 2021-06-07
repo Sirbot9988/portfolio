@@ -40,9 +40,9 @@ export default function Home() {
                 <meta name="theme-color" content="#F1C21B"></meta>
             </Head>
             <Navbar className="relative w-screen"/>
-            <Hero/>
-            <Strengths/>
-                <Learning/>
+            <Hero className="w-screen"/>
+            <Strengths className="w-screen"/>
+                <Learning className="w-screen"/>
                 <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32" data-aos={"fade-up"}>
                     <Contact/>
                     <Github/>
