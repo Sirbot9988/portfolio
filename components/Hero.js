@@ -19,7 +19,7 @@ export default class Hero extends Component {
             <div className="z-0 hidden sm:block relative sm:absolute h-screen w-screen">
             <Particles className="sm:max-height-100" params={particleParams}/>
             </div>
-            <div>
+            <div className="bg-yellow-300 sm:bg-transparent">
                 <div style={styles.text} className="relative z-10 flex justify-center items-center min-h-screen w-screen">
                     <h1 className="text-5xl text-center">
                         <Typed strings={["A <br/>16 Year-Old <br/> Developer"]} typeSpeed={100}/>

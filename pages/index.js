@@ -32,7 +32,7 @@ export default function Home() {
         });
       }, []);
   return (
-        <div>
+        <div className="sm:bg-white bg-white">
             <Head>
                 <title>Sirbot</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -41,9 +41,9 @@ export default function Home() {
             </Head>
             <Navbar className="relative w-screen"/>
             <Hero className="w-screen"/>
-            <Strengths className="w-screen"/>
-                <Learning className="w-screen"/>
-                <div className="relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32" data-aos={"fade-up"}>
+            <Strengths className="w-screen bg-white"/>
+            <Learning className="w-screen bg-white"/>
+                <div id="contacts" className="bg-white relative z-10 flex flex-col justify-center items-center h-192 w-screen  mt-32" data-aos={"fade-up"}>
                     <Contact/>
                     <Github/>
                 </div>
