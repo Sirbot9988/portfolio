@@ -25,7 +25,7 @@ export default class Hero extends Component {
                         <Typed strings={["A <br/>16 Year-Old <br/> Developer"]} typeSpeed={100}/>
                     </h1>
                     <br/>
-                        <div style={{pointerEvents: 'all'}} className="absolute mt-64 headerButton bg-green-100 w-20 text-center rounded-md animate-bounce shadow-lg"><a href="#">My<br/>Projects</a></div>
+                        <div style={{pointerEvents: 'all'}} className="absolute mt-64 headerButton bg-green-100 w-20 text-center rounded-md animate-bounce shadow-lg"><a href="#projects">My<br/>Projects</a></div>
                 </div>
             </div>
             </div>
