@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import strengthConfig from '../config/strengthDescConfig';
+
 export default class PopupStrengths extends Component {
 
     constructor(props) {

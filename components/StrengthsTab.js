@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import strengthConfig from '../config/strengthDescConfig.json';
+
 import Popup from 'reactjs-popup';
 import StrengthPop from './PopupStrengths';
 export default class StrengthsTab extends Component {
