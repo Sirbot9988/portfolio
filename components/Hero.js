@@ -22,7 +22,7 @@ export default class Hero extends Component {
             <div className="bg-yellow-300 sm:bg-transparent">
                 <div style={styles.text} className="relative z-10 flex justify-center items-center min-h-screen w-screen">
                     <h1 className="text-5xl text-center">
-                        <Typed strings={["A <br/>16 Year-Old <br/> Developer"]} typeSpeed={100}/>
+                        <Typed strings={["A <br/>17 Year-Old <br/> Developer"]} typeSpeed={100}/>
                     </h1>
                     <br/>
                         <div style={{pointerEvents: 'all'}} className="absolute mt-64 headerButton bg-green-100 w-20 text-center rounded-md animate-bounce shadow-lg"><a href="#projects">My<br/>Projects</a></div>

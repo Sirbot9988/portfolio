@@ -36,7 +36,7 @@ export default function Home() {
             <Head>
                 <title>Sirbot</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="description" content="A 16 Year Old Developer ready to serve your tech needs"/>
+                <meta name="description" content="A 17 Year Old Developer ready to serve your tech needs"/>
                 <meta name="theme-color" content="#F1C21B"></meta>
             </Head>
             <Navbar className="relative w-screen"/>
